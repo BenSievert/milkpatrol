@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div className="text-center">
+    <div className="text-center ">
       <h1 className="text-3xl font-bold ">Milk Patrol</h1>
       <h3 className="text-xl mb-32">Central Illinois' Number 1 Dairy Based Band</h3>
       <div className="text-l">

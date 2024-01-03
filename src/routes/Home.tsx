@@ -7,7 +7,7 @@ function Home() {
         Form an unhealthy parasocial relationship with us on
         <br></br>
         <div className="my-4 rounded-full bg-blue-700 hover:bg-blue-500 inline-block p-1">
-          <a className="text-white p-1" href="https://discord.gg/HemUfhhZZ">Discord</a>
+          <a className="text-white p-1" href="https://discord.gg/2hk7cNrTNR">Discord</a>
         </div>
         <div className="mb-2">Or</div>
         <div>[Insert 800 different socials here]</div>

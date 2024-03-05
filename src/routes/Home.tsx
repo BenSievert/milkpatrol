@@ -4,7 +4,7 @@ function Home() {
       <h1 className="text-4xl font-bold ">Milk Patrol</h1>
       <div className='flex justify-center items-center mt-2 mb-4'>
         <figure>
-          <a href="https://imgur.com/KlrVZiy"><img width='400px' src="https://i.imgur.com/KlrVZiy.png" title="source: imgur.com" /></a>
+          <img width='400px' src="https://i.imgur.com/KlrVZiy.png" title="source: imgur.com"  alt=':( image didnt load'/>
           <figcaption className='text-left text-xs'>Photo Credit <a className='text-orange-600 underline' href='https://www.instagram.com/ryanmcc_photos/'>Ryan McCauley</a></figcaption>
         </figure>
       </div>

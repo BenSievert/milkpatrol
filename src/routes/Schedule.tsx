@@ -7,7 +7,7 @@ function Schedule() {
       <div>
         <div className='text-3xl mb-4'>  Previous:</div>
 
-        <div className='rounded-2xl p-6 bg-pink-100 inline-block border border-2 border-pink-200 shadow-2xl'>
+        <div className='rounded-2xl p-6 bg-pink-100 inline-block border-2 border-pink-200 shadow-2xl'>
         <div className='mb-3 text-xl'>
           <span className='font-bold'>Where:</span> The Coffeehouse in Normal
           <br></br>

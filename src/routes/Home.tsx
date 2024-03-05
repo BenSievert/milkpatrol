@@ -1,11 +1,48 @@
+import {useState} from "react";
+
 function Home() {
+  const photos= [
+    {
+      url: `https://i.imgur.com/KlrVZiy.png`,
+      credit: `Ryan McCauley`,
+      creditLink: `https://www.instagram.com/ryanmcc_photos/`
+    },
+    {
+      url: `https://i.imgur.com/SJ3siaf.png`,
+      credit: `Ryan McCauley`,
+      creditLink: `https://www.instagram.com/ryanmcc_photos/`
+    },
+    {
+      url: `https://i.imgur.com/zX8pizh.png`,
+      credit: `Ryan McCauley`,
+      creditLink: `https://www.instagram.com/ryanmcc_photos/`
+    },
+    {
+      url: `https://i.imgur.com/O88akf2.png`,
+      credit: `Ryan McCauley`,
+      creditLink: `https://www.instagram.com/ryanmcc_photos/`
+    },
+    {
+      url: `https://i.imgur.com/ifDW6E9.png`,
+      credit: `Ryan McCauley`,
+      creditLink: `https://www.instagram.com/ryanmcc_photos/`
+    },
+    {
+      url: `https://i.imgur.com/GYfHWZM.png`,
+      credit: `Ryan McCauley`,
+      creditLink: `https://www.instagram.com/ryanmcc_photos/`
+    },
+  ]
+
+  const [randNumber] = useState(Math.floor(Math.random() * photos.length))
+  const photo = photos[randNumber]
   return (
     <div className="text-center ">
       <h1 className="text-4xl font-bold ">Milk Patrol</h1>
       <div className='flex justify-center items-center mt-2 mb-4'>
         <figure>
-          <img width='400px' src="https://i.imgur.com/KlrVZiy.png" title="source: imgur.com"  alt=':( image didnt load'/>
-          <figcaption className='text-left text-xs'>Photo Credit <a className='text-orange-600 underline' href='https://www.instagram.com/ryanmcc_photos/'>Ryan McCauley</a></figcaption>
+          <img width='400px' src={photo.url} title="source: imgur.com"  alt=':( image didnt load'/>
+          <figcaption className='text-left text-xs'>Photo Credit <a className='text-orange-600 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
         </figure>
       </div>
       <h3 className="text-xl mb-12">Central Illinois' Number 1 Dairy Based Band</h3>

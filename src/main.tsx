@@ -16,7 +16,7 @@ const links = [
   { title: `Support`, path: `support`, component: Support },
 ];
 ReactDOM.createRoot(document.getElementById(`root`)!).render(
-  <div style={{height: `100vh`}} className="p-6 text-gray-900 bg-gray-100">
+  <div className="p-6 text-gray-900">
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="mb-6">
         {links.map((link) => (

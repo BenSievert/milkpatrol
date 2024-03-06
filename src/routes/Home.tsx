@@ -37,12 +37,12 @@ function Home() {
   const [randNumber] = useState(Math.floor(Math.random() * photos.length))
   const photo = photos[randNumber]
   return (
-    <div className="text-center ">
+    <div className="text-center">
       <h1 className="text-4xl font-bold ">Milk Patrol</h1>
       <div className='flex justify-center items-center mt-2 mb-4'>
         <figure>
           <img width='400px' src={photo.url} title="source: imgur.com"  alt=':( image didnt load'/>
-          <figcaption className='text-left text-xs'>Photo Credit <a className='text-orange-600 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
+          <figcaption className='text-left text-xs'>Photo Credit <a className='text-green-700 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
         </figure>
       </div>
       <h3 className="text-xl mb-12">Central Illinois' Number 1 Dairy Based Band</h3>

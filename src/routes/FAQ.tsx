@@ -1,4 +1,3 @@
-import QAndA from "../components/QAndA";
 function FAQ() {
   const qAndAs = [
     {
@@ -15,10 +14,13 @@ function FAQ() {
     },
   ];
   return (
-    <div className="container">
-      <div className="shadow-md">
-        {qAndAs.map((qAndA) => (
-          <QAndA question={qAndA.question} answer={qAndA.answer} />
+    <div>
+      <div className="p-2">
+        {qAndAs.map(({question, answer}) => (
+          <div className='mb-6 border-b border-green-500'>
+            <div className='mb-1'>{question}</div>
+            <div className='text-2xl mb-1'>{answer}</div>
+          </div>
         ))}
       </div>
     </div>

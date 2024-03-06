@@ -16,7 +16,7 @@ const links = [
   { title: `Support`, path: `support`, component: Support },
 ];
 ReactDOM.createRoot(document.getElementById(`root`)!).render(
-  <div className="p-6 text-gray-900">
+  <div className="p-6 bg-gradient-to-br from-pink-200 to-pink-500 min-h-screen">
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="mb-6 bg-pink-600 py-4 px-6 rounded-2xl md:rounded-full inline-block w-full">
         {links.map((link) => (
@@ -31,7 +31,7 @@ ReactDOM.createRoot(document.getElementById(`root`)!).render(
       <Routes>
         {links.map((link) => (
           <Route element={<div className='flex justify-center text-sm md:text-xl'>
-            <div className='bg-pink-100 p-16 rounded-3xl border-2 border-pink-400 shadow-xl'>
+            <div className='bg-pink-100 p-16 rounded-3xl border-2 border-violet-600 shadow-xl'>
             <link.component />
           </div>
           </div>} path={link.path} />

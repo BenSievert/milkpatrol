@@ -42,7 +42,7 @@ function Home() {
       <div className='flex justify-center items-center mt-2 mb-4'>
         <figure>
           <img width='400px' src={photo.url} title="source: imgur.com"  alt=':( image didnt load'/>
-          <figcaption className='text-left text-xs'>Photo Credit <a className='text-green-700 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
+          <figcaption className='text-left text-xs'>Photo Credit <a className='text-violet-700 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
         </figure>
       </div>
       <h3 className="text-xl mb-12">Central Illinois' Number 1 Dairy Based Band</h3>
@@ -53,7 +53,7 @@ function Home() {
           <a className="text-white p-1" href="https://discord.gg/2hk7cNrTNR">Discord</a>
         </div>
         <div className="mb-2">Or</div>
-        <div className="my-2 text-white hover:text-black rounded-full bg-pink-400 hover:bg-pink-200 inline-block py-1 px-2">
+        <div className="my-2 text-white hover:text-black rounded-full bg-pink-400 hover:bg-pink-300 inline-block py-1 px-2">
           <a className="p-1" href="https://www.instagram.com/milkpatrolband/">Instagram</a>
         </div>
       </div>

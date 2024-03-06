@@ -6,7 +6,7 @@ function About() {
       </div>
       <div>
         If you'd like to <span className='font-bold'>book</span> us, you can message us on Discord, Instagram or email{` `}
-        <a className='underline text-green-700' href = "mailto: sievertbenjamin@gmail.com">sievertbenjamin@gmail.com</a>
+        <a className='underline text-violet-700' href = "mailto: sievertbenjamin@gmail.com">sievertbenjamin@gmail.com</a>
 
       </div>
 

@@ -17,7 +17,7 @@ function FAQ() {
     <div>
       <div className="p-2">
         {qAndAs.map(({question, answer}) => (
-          <div className='mb-6 border-b border-green-500'>
+          <div className='mb-6 border-b border-violet-500'>
             <div className='mb-1'>{question}</div>
             <div className='text-2xl mb-1'>{answer}</div>
           </div>

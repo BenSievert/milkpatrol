@@ -49,11 +49,11 @@ function Home() {
       <div className="text-l">
         Form an unhealthy parasocial relationship with us on
         <br></br>
-        <div className="my-4 rounded-full bg-blue-700 hover:bg-blue-500 inline-block py-1 px-2">
+        <div className="my-4 rounded-full bg-blue-700 hover:bg-blue-500 inline-block py-1 px-2 shadow">
           <a className="text-white p-1" href="https://discord.gg/2hk7cNrTNR">Discord</a>
         </div>
         <div className="mb-2">Or</div>
-        <div className="my-2 text-white hover:text-black rounded-full bg-pink-400 hover:bg-pink-300 inline-block py-1 px-2">
+        <div className="my-2 text-white hover:text-black rounded-full bg-pink-400 hover:bg-pink-300 inline-block py-1 px-2 shadow">
           <a className="p-1" href="https://www.instagram.com/milkpatrolband/">Instagram</a>
         </div>
       </div>

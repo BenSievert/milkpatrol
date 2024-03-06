@@ -26,6 +26,7 @@ function NavBar() {
       <div className={`mb-2 md:mb-6 bg-pink-600 py-4 px-6 rounded-2xl md:rounded-full inline-block bg-gradient-to-tl md:w-auto w-full from-violet-500 to-pink-600 shadow-xl ${open || `hidden md:inline-block`}`}>
         {links.map((link) => (
           <Link
+            onClick={() => setOpen(false)}
             className="text-sm mr-2 hover:bg-pink-400 px-2 p-1 md:p-2 rounded-2xl font-bold text-white block md:inline-block"
             to={link.path}
           >

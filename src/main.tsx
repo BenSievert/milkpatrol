@@ -30,7 +30,7 @@ ReactDOM.createRoot(document.getElementById(`root`)!).render(
       </div>
       <Routes>
         {links.map((link) => (
-          <Route element={<div className='flex justify-center text-xl'>
+          <Route element={<div className='flex justify-center text-sm md:text-xl'>
             <div className='bg-pink-100 p-16 rounded-3xl border-2 border-pink-400 shadow-xl'>
             <link.component />
           </div>

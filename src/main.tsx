@@ -16,7 +16,7 @@ const links = [
   { title: `Support`, path: `support`, component: Support },
 ];
 ReactDOM.createRoot(document.getElementById(`root`)!).render(
-  <div className="p-6 bg-gradient-to-br from-pink-200 to-pink-500 min-h-screen">
+  <div className="p-6 bg-gradient-to-br from-pink-200 to-pink-500 min-h-screen font-sans text-gray-900">
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="mb-6 bg-pink-600 py-4 px-6 rounded-2xl md:rounded-full inline-block w-full">
         {links.map((link) => (

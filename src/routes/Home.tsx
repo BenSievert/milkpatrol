@@ -36,6 +36,7 @@ function Home() {
 
   const [randNumber] = useState(Math.floor(Math.random() * photos.length))
   const photo = photos[randNumber]
+  document.title = `Milk Patrol`
   return (
     <div className="text-center">
       <h1 className="text-4xl font-extrabold tracking-wider">Milk Patrol</h1>

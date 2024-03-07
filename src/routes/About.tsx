@@ -1,4 +1,5 @@
 function About() {
+  document.title = `Milk Patrol-About`
   return (
     <div>
       <div className='mb-4'>

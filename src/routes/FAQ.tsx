@@ -13,11 +13,12 @@ function FAQ() {
       answer: `That's what we call our fans`,
     },
   ];
+  document.title = `Milk Patrol-FAQ`
   return (
     <div>
       <div className="p-2">
-        {qAndAs.map(({question, answer}) => (
-          <div className='mb-6 border-b border-violet-500'>
+        {qAndAs.map(({question, answer}, i) => (
+          <div className='mb-6 border-b border-violet-700' key={i}>
             <div className='mb-1'>{question}</div>
             <div className='text-2xl mb-1'>{answer}</div>
           </div>

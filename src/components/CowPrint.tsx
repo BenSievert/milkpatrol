@@ -1,5 +1,5 @@
 function CowPrint() {
-  return <div className='relative'><svg width="200%" height="200%" className='fill-pink-600 fixed' style={{top: '-800', left: `-400`}} version="1.1" id="Layer_1" viewBox="0 0 800 800" preserveAspectRatio="none">
+  return <div className='invisible md:visible'><svg width="200%" height="200%" className='fill-pink-600 fixed' style={{top: '-800', left: `-400`}} version="1.1" id="Layer_1" viewBox="0 0 800 800" preserveAspectRatio="none">
 <g x="0" y="0" >
 	<path d="M255.8,287.8c-7,1.2-13.7,3.5-20.4,5.9c-7.3,2.6-15.3,5.6-19.3,12.2c-3.2,5.3-3.1,12.2-0.8,18c2.3,5.8,6.7,10.5,11.7,14.3
 		c1.9,1.5,4,2.8,5.7,4.5c3.8,3.8,5.8,9.1,7.6,14.2c1.1,3,2.2,6,3.2,9c0.7,2,1.4,4,2.5,5.8c2.7,4.5,7.3,7.6,12.3,9.2

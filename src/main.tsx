@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById(`root`)!).render(
       <div className='relative z-10'><NavBar /></div>
       <div className='text-center'>
         <CowPrint />
-      <div className='text-left bg-pink-100 p-4 md:p-16 rounded-3xl border-2 border-black shadow-2xl inline-block relative z-10'>
+      <div className='text-left bg-pink-100 p-4 md:p-16 rounded-3xl border-4 border-black shadow-2xl inline-block relative z-10'>
       <Routes>
         {links.map((link, i ) => (
           <Route key={i} element={<div className='flex justify-center text-sm md:text-xl'>

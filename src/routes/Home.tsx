@@ -42,7 +42,7 @@ function Home() {
       <h1 className="text-4xl font-extrabold tracking-wider">Milk Patrol</h1>
       <div className='flex justify-center items-center mt-2 mb-4'>
         <figure>
-          <img className='border-2 border-black rounded' width='400px' src={photo.url} title="source: imgur.com"  alt=':( image didnt load'/>
+          <img className='border-[3px] border-black rounded' width='400px' src={photo.url} title="source: imgur.com"  alt=':( image didnt load'/>
           <figcaption className='text-left text-xs'>Photo Credit <a className='text-violet-700 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
         </figure>
       </div>

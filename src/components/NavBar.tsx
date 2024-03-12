@@ -24,12 +24,12 @@ function NavBar() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </div>
-      <div className={`border-[3px] border-black mb-2 md:mb-6 bg-pink-600 py-4 px-6 rounded-2xl md:rounded-full inline-block bg-gradient-to-tl md:w-auto w-full from-violet-500 to-pink-600 shadow-xl ${open || `hidden md:inline-block`}`}>
+      <div className={`border-[3px] border-black mb-2 md:mb-6 bg-pink-600 py-4 px-6 rounded-2xl md:rounded-full inline-block bg-gradient-to-tl md:w-auto w-full from-violet-600 to-pink-600 shadow-xl ${open || `hidden md:inline-block`}`}>
         {links.map((link, i) => (
           <Link
             key={i}
             onClick={() => setOpen(false)}
-            className={`mb-1 text-sm mr-2 hover:bg-pink-400 px-3 py-2 md:p-2 rounded-2xl font-bold text-white block md:inline-block ${pathname == link.path && `bg-pink-400`}`}
+            className={`mb-1 text-sm mr-2 hover:bg-pink-400 px-3 py-2 md:p-2 rounded-2xl font-bold text-white block md:inline-block ${pathname == link.path && `bg-pink-400 text-violet-900`}`}
             to={link.path}
           >
             {link.title}

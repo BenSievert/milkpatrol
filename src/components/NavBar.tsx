@@ -29,7 +29,7 @@ function NavBar() {
           <Link
             key={i}
             onClick={() => setOpen(false)}
-            className={`mb-1 text-sm mr-2 hover:bg-pink-400 px-3 py-2 md:p-2 rounded-2xl font-bold text-white block md:inline-block ${pathname == link.path && `bg-pink-400 text-violet-900`}`}
+            className={`mb-1 text-sm mr-2 hover:bg-pink-400 px-3 py-2 md:p-2 rounded-2xl font-bold block md:inline-block ${pathname == link.path ? `bg-pink-400 text-violet-900` : `text-white`}`}
             to={link.path}
           >
             {link.title}

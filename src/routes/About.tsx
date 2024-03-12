@@ -5,7 +5,7 @@ function About() {
     { bandMate: `Josh Dahmm`, roles: `Hype Man` },
     { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Albatross`},
     { bandMate: `Jake Ewen`, roles: `Intercontinental Philosopher`},
-    { bandMate: `Bradon Hughes`, roles: `Plant Milk Ambassador`}
+    { bandMate: `Braydon Hughes`, roles: `Plant Milk Ambassador`}
   ]
   return (
     <div>

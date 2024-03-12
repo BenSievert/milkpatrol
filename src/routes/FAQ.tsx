@@ -6,15 +6,15 @@ function FAQ() {
     },
     {
       question: `The whole milk angle is pretty strange isn't it?`,
-      answer: `Not really, I can think of three bands with milk based names off the top of my head`,
+      answer: `Not really, I can think of three bands with milk based names off the top of my head.`,
     },
     {
       question: `What is the Lactose Legion?`,
-      answer: `That's what we call our fans`,
+      answer: `That's what we call our fans.`,
     },
     {
       question: `Why is the nav button on the left side on mobile?`,
-      answer: `I am left-handed and want to take revenge against a world made for right-handed people`
+      answer: `I am left-handed and want to take revenge against a world made for right-handed people.`
     },
     {
       question: `Why are all these questions answered in first-person? I thought you were a band.`,

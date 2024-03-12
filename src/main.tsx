@@ -6,7 +6,7 @@ import  NavBar from './components/NavBar'
 import CowPrint from "./components/CowPrint.tsx";
 
 ReactDOM.createRoot(document.getElementById(`root`)!).render(
-  <div className="p-2 md:p-6 bg-violet-300 min-h-screen font-sans text-gray-900">
+  <div className="p-2 md:p-6 min-h-screen font-sans text-gray-900">
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className='relative z-10'><NavBar /></div>
       <div className='text-center'>

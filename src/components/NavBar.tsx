@@ -19,7 +19,7 @@ function NavBar() {
   const [open, setOpen] = useState(false)
   return (
     <div>
-      <div className='md:hidden inline-block shadow bg-violet-300 rounded-2xl' onClick={() => setOpen(!open)}>
+      <div className='md:hidden inline-block shadow bg-gradient-to-tl from-violet-600 to-pink-600 rounded-2xl' onClick={() => setOpen(!open)}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 m-2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>

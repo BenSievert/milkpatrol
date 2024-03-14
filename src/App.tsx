@@ -24,7 +24,7 @@ function App() {
               ))}
             </Routes>
           </div>
-          <div className='text-center my-2'><button onClick={() => setSpin(!spin)} className={`z-20 relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider`}`}>{spin ? `MAKE IT STOP!!!` : `Make it spin!`}</button></div>
+          <div className='text-center my-2'><button onClick={() => setSpin(true)} className={`z-20 relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider`}`}>{spin ? `THIS CANNOT BE UNDONE` : `Make it spin!`}</button></div>
         </div>
 
       </BrowserRouter>

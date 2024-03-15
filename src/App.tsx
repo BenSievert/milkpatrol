@@ -6,9 +6,10 @@ import { useState } from "react";
 
 function App() {
   const [spin, setSpin] = useState(false)
+  const [doubleSpin, setDoubleSpin] = useState(false);
 
   return (
-    <div className={`p-2 md:p-6 min-h-screen font-sans text-gray-900 `}>
+    <div className={`p-2 md:p-6 min-h-screen font-sans text-gray-900 ${doubleSpin && `animate-spin`}`}>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <NavBar />
         <div className='text-center relative'>
@@ -24,7 +25,7 @@ function App() {
               ))}
             </Routes>
           </div>
-          <div className={`text-center my-2 z-20 ${spin && `fixed top-1/2 left-1/2 transform translate-x-[-50%]`}`}><button onClick={() => setSpin(true)} className={` ${!spin && `hover:bg-green-300`} relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider cursor-default`}`}>{spin ? `THIS CANNOT BE UNDONE` : `Make it spin!`}</button></div>
+          <div className={`text-center my-2 z-20 ${spin && `fixed top-1/2 left-1/2 transform translate-x-[-50%]`}`}><button onClick={() => spin ? setDoubleSpin(true) : setSpin(true)} className={` ${!doubleSpin && `hover:bg-green-300`} relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider`} ${doubleSpin && `cursor-default`}`}>{doubleSpin ? `=ygU5M"{8D9*&|p3@@42l]4!cH:kfES+&"z$` : spin ? `THIS CANNOT BE UNDONE` : `Make it spin!`}</button></div>
         </div>
 
       </BrowserRouter>

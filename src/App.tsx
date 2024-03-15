@@ -25,7 +25,7 @@ function App() {
               ))}
             </Routes>
           </div>
-          <div className={`text-center my-2 z-20 ${spin && `fixed top-1/2 left-1/2 transform translate-x-[-50%]`}`}><button onClick={() => spin ? setDoubleSpin(true) : setSpin(true)} className={` ${!doubleSpin && `hover:bg-green-300`} relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider`} ${doubleSpin && `cursor-default`}`}>{doubleSpin ? `=ygU5M"{8D9*&|p3@@42l]4!cH:kfES+&"z$` : spin ? `THIS CANNOT BE UNDONE` : `Make it spin!`}</button></div>
+          <div className={`text-center my-2 z-20 ${spin && `fixed top-1/2 left-1/2 transform translate-x-[-50%]`}`}><button onClick={() => spin ? setDoubleSpin(true) : setSpin(true)} className={` ${!doubleSpin && `hover:bg-green-300`} relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider`} ${doubleSpin && `cursor-default`}`}>{doubleSpin ? `=ygU5M"{8D9*&|p3@@42l]4!cH:kfES+&"z$` : spin ? <>THIS CANNOT BE UNDONE<br/><span className='text-xs text-gray-600'>(May cause even more motion sickness)</span></> : <>Make it spin!<br/><span className='text-xs text-gray-600'>(May cause motion sickness)</span></>}</button></div>
         </div>
 
       </BrowserRouter>

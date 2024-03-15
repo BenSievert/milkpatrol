@@ -11,7 +11,7 @@ function App() {
     <div className={`p-2 md:p-6 min-h-screen font-sans text-gray-900 `}>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <NavBar />
-        <div className='text-center'>
+        <div className='text-center relative'>
           <CowPrint />
           <div className={`text-left bg-pink-100 p-4 md:p-16 rounded-3xl border-4 border-black shadow-2xl inline-block relative z-10 mt-4 md:mt-0 ${spin && `animate-spin`}`}>
             <Routes>
@@ -24,7 +24,7 @@ function App() {
               ))}
             </Routes>
           </div>
-          <div className='text-center my-2'><button onClick={() => setSpin(true)} className={` ${!spin && `hover:bg-green-300`} z-20 relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider cursor-default`}`}>{spin ? `THIS CANNOT BE UNDONE` : `Make it spin!`}</button></div>
+          <div className={`text-center my-2 z-20 ${spin && `fixed top-1/2 left-1/2 transform translate-x-[-50%]`}`}><button onClick={() => setSpin(true)} className={` ${!spin && `hover:bg-green-300`} relative p-3 bg-green-400 rounded-xl font-bold border-black border-2 ${spin && `font-extrabold tracking-wider cursor-default`}`}>{spin ? `THIS CANNOT BE UNDONE` : `Make it spin!`}</button></div>
         </div>
 
       </BrowserRouter>

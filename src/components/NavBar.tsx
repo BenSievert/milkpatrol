@@ -30,7 +30,7 @@ function NavBar() {
         </svg>
       </div>
       <div className={`${theme.navBar} mt-14 md:mt-0 left-0 absolute md:static z-20 border-[3px] border-black mb-2 md:mb-6 py-4 px-6 rounded-2xl md:rounded-full inline-block  md:w-auto w-full  shadow-xl ${open || `hidden md:inline-block`}`}>
-        {links.slice(1).map((link, i) => (
+        {links.map((link, i) => (
           <Link
             key={i}
             onClick={() => setOpen(false)}

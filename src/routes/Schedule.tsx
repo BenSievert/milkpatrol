@@ -2,11 +2,11 @@ function Schedule() {
   document.title = `Milk Patrol-Schedule`
   return (
     <div>
-      <div className='text-3xl mb-24'>
+      <div className='text-2xl mb-24'>
         Upcoming: <span className='text-base'>None :( Please book us</span>
       </div>
       <div>
-        <div className='text-3xl mb-4'>  Previous:</div>
+        <div className='text-2xl mb-4'>  Previous:</div>
 
         <div className='rounded-2xl p-2 md:p-6 bg-violet-100 inline-block border-2 border-violet-600 shadow-2xl'>
         <div className='mb-3 text-xl'>

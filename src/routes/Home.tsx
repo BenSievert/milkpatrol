@@ -1,6 +1,8 @@
-import {useState} from "react";
+import { ThemeContext } from "../context/theme.ts";
+import {useContext} from "react";
 
 function Home() {
+  /*
   const photos= [
     {
       url: `https://i.imgur.com/KlrVZiy.png`,
@@ -32,21 +34,33 @@ function Home() {
       credit: `Ryan McCauley`,
       creditLink: `https://www.instagram.com/ryanmcc_photos/`
     },
+    {
+      url: `../public/milkpatrolicon.png`,
+      credit: `Hailey Fetting`,
+      creditLink: `https://www.haileynfetting.com/`,
+      type: `logo`
+    }
   ]
-
-  const [randNumber] = useState(Math.floor(Math.random() * photos.length))
-  const photo = photos[randNumber]
+ */
+ // const [randNumber] = useState(Math.floor(Math.random() * photos.length))
+  const photo = {
+    url: `../public/milkpatrolicon.png`,
+    credit: `Hailey Fetting`,
+    creditLink: `https://www.haileynfetting.com/`,
+    type: `logo`
+  }
   document.title = `Milk Patrol`
+
+  const context =  useContext(ThemeContext)?.home;
+
   return (
     <div className={`text-center`}>
-      <h1 className="text-4xl font-extrabold tracking-wider">Milk Patrol</h1>
-      <div className='flex justify-center items-center mt-2 mb-4'>
+      <div className='flex justify-center items-center mb-6 rounded-xl'>
         <figure>
-          <img className='border-[3px] border-black rounded' width='400px' src={photo.url} title="source: imgur.com"  alt=':( image didnt load'/>
-          <figcaption className='text-left text-xs'>Photo Credit <a className='text-violet-700 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
+          <img width='450px' src={photo.url} alt=':( image didnt load'/>
+          <figcaption className='text-right text-xs'>Image Credit <a className='text-violet-700 underline' href={photo.creditLink}>{photo.credit}</a></figcaption>
         </figure>
       </div>
-      <h3 className="text-xl mb-12">Central Illinois' Number 1 Dairy Based Band</h3>
       <div className="text-l">
         Form an unhealthy parasocial relationship with us on
         <br></br>

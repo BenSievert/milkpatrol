@@ -41,7 +41,7 @@ function Home() {
  */
  // const [randNumber] = useState(Math.floor(Math.random() * photos.length))
   const photo = {
-    url: `../public/milkpatrolicon.png`,
+    url: `/milkpatrolicon.png`,
     credit: `Hailey Fetting`,
     creditLink: `https://www.haileynfetting.com/`,
     type: `logo`

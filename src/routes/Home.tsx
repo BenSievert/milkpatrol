@@ -1,6 +1,3 @@
-import { ThemeContext } from "../context/theme.ts";
-import {useContext} from "react";
-
 function Home() {
   /*
   const photos= [
@@ -50,8 +47,6 @@ function Home() {
     type: `logo`
   }
   document.title = `Milk Patrol`
-
-  const context =  useContext(ThemeContext)?.home;
 
   return (
     <div className={`text-center`}>

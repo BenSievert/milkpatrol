@@ -6,7 +6,6 @@ import FAQ from "../routes/FAQ";
 import About from "../routes/About";
 import Support from "../routes/Support";
 import Schedule from "../routes/Schedule";
-import SecretPage from "../routes/SecretPage";
 import { ThemeContext } from "../context/theme"
 
 export const links = [

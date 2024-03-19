@@ -25,7 +25,7 @@ function WrappedContext({setTheme}: any) {
               className={`${theme.cardBackground} text-left px-4 py-4 md:px-12 md:py-6 rounded-3xl border-4 border-black shadow-2xl inline-block relative z-10 md:mt-0`}>
               <Routes>
                 {links.map((link, i) => (
-                  <Route key={i} element={<div className='flex justify-center align-middle text-sm md:text-xl flex-col'>
+                  <Route key={i} element={<div className='flex justify-center align-middle text-sm md:text-xl flex-col text-left'>
 
                     <h1 className='tracking-wider text-left text-3xl pb-4 font-bold'>{link.heading || link.title}</h1>
                     <link.component />

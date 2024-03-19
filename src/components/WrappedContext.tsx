@@ -20,7 +20,7 @@ function WrappedContext({setTheme}: any) {
           <div className={`text-center relative  ${spin && `animate-spin`}`}>
             {type == `sonic` && <img className='ml-auto mr-auto' src='/sanichead.png'></img> }
             <div className={`flex justify-center align-middle`}>
-              {type == `sonic` && <img className='invisible md:visible absolute md:relative' src='/sanicleft.png'></img> }
+              {type == `sonic` && <img className='invisible xl:visible absolute xl:relative' src='/sanicleft.png'></img> }
             <div
               className={`${theme.cardBackground} text-left px-4 py-4 md:px-12 md:py-6 rounded-3xl border-4 border-black shadow-2xl inline-block relative z-10 md:mt-0`}>
               <Routes>
@@ -43,7 +43,7 @@ function WrappedContext({setTheme}: any) {
                 </Route>
               </Routes>
             </div>
-              { type == `sonic` && <img className='invisible md:visible absolute md:relative' src='/sanicright.png'></img> }
+              { type == `sonic` && <img className='invisible xl:visible absolute xl:relative' src='/sanicright.png'></img> }
             </div>
             {type == `sonic` && <img className='ml-auto mr-auto' src='/saniclegs.png'></img> }
           </div>

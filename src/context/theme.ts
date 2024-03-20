@@ -12,6 +12,7 @@ export const themes = {
     main: {
       cardBackground: `bg-pink-100`,
       background: `bg-violet-300`,
+      rounded: `rounded-3xl`
     },
     home: {
       bandType: `Dairy Based`
@@ -28,7 +29,8 @@ export const themes = {
     main: {
       cardBackground: `bg-amber-100`,
       background: `bg-blue-500`,
-      border: `border-white`
+      border: `border-white`,
+      rounded: `rounded-xl`
     },
     home: {
       bandType: `Fastest`

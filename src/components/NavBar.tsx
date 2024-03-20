@@ -6,7 +6,8 @@ import FAQ from "../routes/FAQ";
 import About from "../routes/About";
 import Support from "../routes/Support";
 import Schedule from "../routes/Schedule";
-import { ThemeContext } from "../context/theme"
+import { ThemeContext } from "../context/theme.tsx"
+
 
 export const links = [
   { title: `Home`, path: `/`, component: Home, heading: `Central Illinois' Number 1 Dairy Based Band` },

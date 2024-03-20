@@ -1,7 +1,7 @@
 import WrappedContext from "./components/WrappedContext.tsx";
-import { ThemeContext } from "./context/theme.ts";
+import { ThemeContext } from "./context/theme.tsx";
 import { useState } from "react";
-import {themes} from "./context/theme.ts";
+import {themes} from "./context/theme.tsx";
 
 
 function App() {

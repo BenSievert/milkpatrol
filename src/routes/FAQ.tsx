@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import {ThemeContext} from "../context/theme.tsx";
+
 function FAQ() {
   const qAndAs = [
     {
@@ -22,11 +25,13 @@ function FAQ() {
     }
   ];
   document.title = `Milk Patrol-FAQ`
+  const theme =  useContext(ThemeContext).card;
+
   return (
     <div>
       <div className="p-2">
         {qAndAs.map(({question, answer}, i) => (
-          <div className='mb-6 border-b border-violet-700' key={i}>
+          <div className={`mb-6 border-b ${theme.border}`} key={i}>
             <div className=' mb-1'>{question}</div>
             <div className='mb-1'>{answer}</div>
           </div>

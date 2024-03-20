@@ -1,4 +1,5 @@
 function Home() {
+
   /*
   const photos= [
     {

@@ -1,22 +1,21 @@
+import Card from "../components/Card.tsx";
+import {ThemeContext} from "../context/theme.tsx";
+import {useContext} from "react";
+
 function About() {
+  const theme =  useContext(ThemeContext).about;
+
   document.title = `Milk Patrol-About`
-  const us = [
-    { bandMate: `Ben Sievert`, roles: `Website Admin` },
-    { bandMate: `Josh Dahmm`, roles: `Hype Man` },
-    { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Albatross`},
-    { bandMate: `Jake Ewen`, roles: `Intercontinental Philosopher`},
-    { bandMate: `Braydon Hughes`, roles: `Plant Milk Ambassador`}
-  ]
   return (
     <div>
       <div className='mb-4'>
         <div>We are just some cool dudes who like to make music. The only thing stronger than our love for music is our bond of friendship</div>
-        <div className='mt-4 border-2 inline-block border-violet-700 rounded-xl bg-violet-100 p-4'>
-          <div className='mb-4 border-b border-violet-700 text-2xl'>Current Lineup</div>
-          {us.map(({bandMate, roles}) => <div className='mt-2'>
-            <span className='font-bold text-violet-900'>{bandMate}:</span> <div className=' border-b border-violet-700 inline-block'><div className='text-green-900 inline-block'>{roles}</div></div>
+        <Card>
+          <div className={`mb-4 border-b border-violet-700 text-2xl`}>Current Lineup</div>
+          {theme.bandMembers.map(({bandMate, roles}) => <div className='mt-2'>
+            <span className={`font-bold ${theme.role}`}>{bandMate}:</span> <div className={`border-b ${theme.border} inline-block`}><div className={`${theme.bandMember} inline-block`}>{roles}</div></div>
           </div>)}
-        </div>
+        </Card>
 
       </div>
       <div>

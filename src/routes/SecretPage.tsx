@@ -1,5 +1,5 @@
-import { themes} from "../context/theme.ts";
-import { ThemeContext } from "../context/theme"
+import { themes} from "../context/theme.tsx";
+import { ThemeContext } from "../context/theme.tsx"
 import {useContext} from "react";
 
 

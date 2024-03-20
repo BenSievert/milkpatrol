@@ -2,7 +2,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import NavBar, {links} from "./NavBar.tsx";
 import CowPrint from "./CowPrint.tsx";
 import {useState, useContext } from "react";
-import { ThemeContext } from "../context/theme.ts";
+import { ThemeContext } from "../context/theme.tsx";
 import SecretPage from "../routes/SecretPage.tsx";
 
 function WrappedContext({setTheme}: any) {
@@ -16,7 +16,7 @@ function WrappedContext({setTheme}: any) {
       <div  style={type == `sonic` ? {backgroundImage: `url('ghz.png')`}: {}} className={`${theme.background} p-2 md:p-6 min-h-screen font-sans text-gray-900 ${doubleSpin && `animate-spin`}`}>
         <BrowserRouter basename={import.meta.env.BASE_URL}>
           <NavBar/>
-          {type == `milk` && <CowPrint/>}
+          {type != `sonic` && <CowPrint fill={theme.fill}/>}
           <div className={`text-center relative  ${spin && `animate-spin`}`}>
             {type == `sonic` && <img className='ml-auto mr-auto' src='/sanichead.png'></img> }
             <div className={`flex justify-center align-middle`}>

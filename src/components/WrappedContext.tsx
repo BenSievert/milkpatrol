@@ -21,8 +21,9 @@ function WrappedContext({setTheme}: any) {
             {type == `sonic` && <img className='ml-auto mr-auto' src='/sanichead.png'></img> }
             <div className={`flex justify-center align-middle`}>
               {type == `sonic` && <img className='invisible xl:visible absolute xl:relative' src='/sanicleft.png'></img> }
+              <div className={type == `sonic` ? ` bg-[rgb(63,70,197)] rounded-xl text-left px-4 py-8 border-4 border-black xl:border-l-0 xl:border-r-0 inline-block relative z-10` : ``}>
             <div
-              className={`${theme.cardBackground} text-left px-4 py-4 md:px-12 md:py-6 ${theme.rounded} border-4 border-black shadow-2xl inline-block relative z-10 md:mt-0`}>
+              className={`${theme.cardBackground} text-left px-4 py-4 md:px-12 md:py-6 rounded-3xl shadow-2xl inline-block border-4 border-black relative z-10 md:mt-0`}>
               <Routes>
                 {links.map((link, i) => (
                   <Route key={i} element={<div className='flex justify-center align-middle text-sm md:text-xl flex-col text-left'>
@@ -43,6 +44,7 @@ function WrappedContext({setTheme}: any) {
                 </Route>
               </Routes>
             </div>
+              </div>
               { type == `sonic` && <img className='invisible xl:visible absolute xl:relative' src='/sanicright.png'></img> }
             </div>
             {type == `sonic` && <img className='ml-auto mr-auto' src='/saniclegs.png'></img> }

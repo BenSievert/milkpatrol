@@ -58,7 +58,7 @@ function Home() {
         </figure>
       </div>
       <div className="text-l">
-        Form an unhealthy parasocial relationship with us on
+        Follow us on
         <br></br>
         <div className="my-4 rounded-full bg-blue-700 hover:bg-blue-500 inline-block py-1 px-2 shadow border-2 border-black">
           <a className="text-white p-1" href="https://discord.gg/2hk7cNrTNR">Discord</a>

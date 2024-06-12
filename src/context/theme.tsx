@@ -29,14 +29,13 @@ export const themes = {
       border: `border-violet-700`,
       bandMember: `text-green-900`,
       role: `text-violet-900`,
-      bandMembers: [
-        { bandMate: `Ben Sievert`, roles: `Website Admin` },
-        { bandMate: `Josh Dahmm`, roles: `Hype Man` },
-        { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Albatross`},
-        { bandMate: `Jake Ewen`, roles: `Intercontinental Philosopher`},
-        { bandMate: `Braydon Hughes`, roles: `Plant Milk Ambassador`}
+      bandMembers:  [
+        { bandMate: `Ben Sievert`, roles: `Guitar, Bass, Keys, Vocals` },
+        { bandMate: `Josh Dahmm`, roles: `Vocals, Keys, Guitar` },
+        { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Bass, Violin, Guitar, Vocals`},
+        { bandMate: `Jake Ewen`, roles: `Guitar`},
+        { bandMate: `Braydon Hughes`, roles: `Percussion`}
       ]
-
     }
   },
   sonic: {
@@ -104,11 +103,11 @@ export const themes = {
       bandMember: `text-black`,
       role: `text-black`,
       bandMembers: [
-        { bandMate: `Ben Sievert`, roles: `Website Admin` },
-        { bandMate: `Josh Dahmm`, roles: `Hype Man` },
-        { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Albatross`},
-        { bandMate: `Jake Ewen`, roles: `Intercontinental Philosopher`},
-        { bandMate: `Braydon Hughes`, roles: `Plant Milk Ambassador`}
+        { bandMate: `Ben Sievert`, roles: `Guitar, Bass, Keys, Vocals` },
+        { bandMate: `Josh Dahmm`, roles: `Vocals, Keys, Guitar` },
+        { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Bass, Violin, Guitar, Vocals`},
+        { bandMate: `Jake Ewen`, roles: `Guitar`},
+        { bandMate: `Braydon Hughes`, roles: `Percussion`}
       ]
 
     }

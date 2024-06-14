@@ -4,7 +4,7 @@ import {Link, useLocation} from "react-router-dom";
 import Home from "../routes/Home";
 import FAQ from "../routes/FAQ";
 import About from "../routes/About";
-import Support from "../routes/Support";
+//import Support from "../routes/Support";
 import Schedule from "../routes/Schedule";
 import { ThemeContext } from "../context/theme.tsx"
 

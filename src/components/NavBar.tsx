@@ -14,7 +14,7 @@ export const links = [
   { title: `Schedule`, path: `/schedule`, component: Schedule },
   { title: `About`, path: `/about`, component: About },
   { title: `FAQ`, path: `/faq`, component: FAQ },
-  { title: `Support`, path: `/support`, component: Support },
+ // { title: `Support`, path: `/support`, component: Support },
 ];
 
 function NavBar() {

@@ -9,9 +9,9 @@ function About() {
   return (
     <div>
       <div className='mb-4'>
-        <div>We are just some cool dudes who like to make music. The only thing stronger than our love for music is our bond of friendship</div>
+        <div className='mb-4'>We are a dairy-themed band based out of Bloomington-Normal. We perform a mixture of covers and original songs in a variety of genres. <br />(all our members have different tastes and we need to keep everyone happy.)</div>
         <Card>
-          <div className={`mb-4 border-b border-violet-700 text-2xl`}>Current Lineup</div>
+          <div className={`mb-4 border-b border-violet-700 text-2xl`}>Members</div>
           {theme.bandMembers.map(({bandMate, roles}) => <div className='mt-2'>
             <span className={`font-bold ${theme.role}`}>{bandMate}:</span> <div className={`border-b ${theme.border} inline-block`}><div className={`${theme.bandMember} inline-block`}>{roles}</div></div>
           </div>)}
@@ -19,7 +19,7 @@ function About() {
 
       </div>
       <div>
-        If you'd like to <span className='font-bold'>book</span> us, you can message us on Discord, Instagram, or email{` `}
+        If you'd like to book us, you can message us on Discord, Instagram, or email{` `}
         <a className='underline text-violet-700' href = "mailto: sievertbenjamin@gmail.com">sievertbenjamin@gmail.com</a>
 
       </div>

@@ -30,11 +30,12 @@ export const themes = {
       bandMember: `text-green-900`,
       role: `text-violet-900`,
       bandMembers:  [
-        { bandMate: `Ben Sievert`, roles: `Guitar, Bass, Keys, Vocals` },
+
         { bandMate: `Josh Dahmm`, roles: `Vocals, Keys, Guitar` },
-        { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Bass, Violin, Guitar, Vocals`},
         { bandMate: `Jake Ewen`, roles: `Guitar`},
-        { bandMate: `Braydon Hughes`, roles: `Percussion`}
+        { bandMate: <>Tommy <span className='italic'>"The Albatross"</span> Harris</>, roles: `Bass, Violin, Guitar, Vocals`},
+        { bandMate: `Braydon Hughes`, roles: `Percussion`},
+        { bandMate: `Ben Sievert`, roles: `Guitar, Bass, Keys, Vocals` }
       ]
     }
   },

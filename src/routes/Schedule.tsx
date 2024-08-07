@@ -2,7 +2,9 @@ import Card from "../components/Card.tsx";
 
 function Schedule() {
   document.title = `Milk Patrol-Schedule`
-  const upcoming =  [{where: `103 W. Franklin St. Downs, IL`, when: `4pm, Sept 17th, 2024`, img: `https://i.imgur.com/pNqDfDJ.png`, link: `https://www.instagram.com/downsvillagemarket`}]
+  const upcoming =  [
+    {where: `The Space in Champaign`, when: `7:30pm, August 14, 2024`, img: `https://i.imgur.com/7wUrPDs.png`, link: `https://www.eventbrite.com/e/the-simsons-olivia-wexler-mango-pods-and-milk-patrol-tickets-979398426057?aff=ebdsoporgprofile`},
+    {where: `103 W. Franklin St. Downs, IL`, when: `4pm, Sept 17th, 2024`, img: `https://i.imgur.com/pNqDfDJ.png`, link: `https://www.instagram.com/downsvillagemarket`}]
   const previous = [
     {where: `The Bone Student Center`, when: `7pm, April 17th, 2024`, img: `https://i.imgur.com/7hZnFZ7.png`, link: `https://www.instagram.com/p/C5ghuJthe1u/`},
     {where: 'The Coffeehouse in Normal', when: 'February 23rd, 2024', img: 'https://i.imgur.com/JvLoMud.png', link: `https://imgur.com/JvLoMud`},
@@ -20,6 +22,7 @@ function Schedule() {
     </div>
   return (
     <div>
+      <span className='text-gray-500 text-sm'>Click images for relevant link</span>
       <div className='text-2xl mb-4'>
         Upcoming: {upcoming.length ? upcoming.map((event, i) => <ScheduleCard key={i} where={event.where} when={event.when} img={event.img} link={event.link} />) : `None :( please book us`}
       </div>

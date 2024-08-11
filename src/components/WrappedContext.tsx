@@ -39,7 +39,7 @@ function WrappedContext({setTheme}: any) {
                     <h1 className='tracking-wider text-left text-3xl pb-4 font-bold'>Secret Page</h1>
                     <SecretPage setTheme={setTheme}/>
                   </div>
-                  } path='/i_love_sonic'>
+                  } path='/i-love-sonic'>
 
                 </Route>
               </Routes>

@@ -9,7 +9,7 @@ function About() {
   return (
     <div>
       <div className='mb-4'>
-        <div className='mb-4'>We are a dairy-themed band based out of Bloomington-Normal. We perform a mixture of covers and original songs in a variety of genres. <br />(all our members have different tastes and we need to keep everyone happy.)</div>
+        <div className='mb-4'>We are a dairy-themed band based out of Bloomington-Normal. We perform a mixture of covers and original songs in a variety of genres.</div>
         <Card>
           <div className={`mb-4 border-b border-violet-700 text-2xl`}>Members</div>
           {theme.bandMembers.map(({bandMate, roles}) => <div className='mt-2'>

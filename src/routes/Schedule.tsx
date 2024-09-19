@@ -2,15 +2,14 @@ import Card from "../components/Card.tsx";
 
 function Schedule() {
   document.title = `Milk Patrol-Schedule`;
-  const upcoming = [
+  const upcoming = [];
+  const previous = [
     {
       where: `103 W. Franklin St. Downs, IL`,
       when: `4pm, Sept 18th, 2024`,
       img: `https://i.imgur.com/pNqDfDJ.png`,
       link: `https://www.instagram.com/downsvillagemarket`,
     },
-  ];
-  const previous = [
     {
       where: `The Space in Champaign`,
       when: `7:30pm, August 14, 2024`,

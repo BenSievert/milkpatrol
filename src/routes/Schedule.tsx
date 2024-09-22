@@ -2,7 +2,8 @@ import Card from "../components/Card.tsx";
 
 function Schedule() {
   document.title = `Milk Patrol-Schedule`;
-  const upcoming = [];
+  const upcoming: { where: string; when: string; img: string; link: string }[] =
+    [];
   const previous = [
     {
       where: `103 W. Franklin St. Downs, IL`,
